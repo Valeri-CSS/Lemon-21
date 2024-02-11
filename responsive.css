@@ -1,0 +1,336 @@
+@media only screen and (min-width:768px) {
+
+    .container {
+        width: 80%;
+    }
+
+    .nav-content {
+        transform: translatex(0);
+        background-color: unset;
+        width: 77%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: self-start;
+        height: unset;
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 50px;
+    }
+
+    .nav-items {
+        margin-top: 50px;
+        position: relative;
+    }
+
+    .nav-items a {
+        display: block;
+        color: black;
+        text-decoration: none;
+        margin: 30px 0;
+        transition: .5s;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .nav-content-btn {
+        margin-top: 73px;
+        color: black;
+        background-color: white;
+        border: 1px solid gray;
+    }
+
+    .nav-content-btn:hover {
+        background-color: #2a514c;
+        color: white;
+        cursor: pointer;
+    }
+
+    .nav-content-btn:active {
+        background-color: #ebfa9e;
+        color: black;
+    }
+
+    .nav-items a::after {
+        content: "";
+        position: absolute;
+        bottom: 29px;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background-color: black;
+        transition: transform .5s;
+        transform-origin: right;
+        transform: scalex(0);
+    }
+
+    .nav-items a::before {
+        content: "";
+        position: absolute;
+        bottom: 48px;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background-color: black;
+        transition: transform .5s;
+        transform-origin: left;
+        transform: scalex(0)
+    }
+
+    .nav-items a:hover:after {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    .nav-items a:hover:before {
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+
+    .hero-titel {
+        width: 662px;
+        font-size: 65px;
+    }
+
+    .hero-description {
+        width: 562px;
+        font-size: 15px;
+    }
+
+    .about-top {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .about-description {
+        width: 628px;
+        text-align: left;
+    }
+
+    .about-titel {
+        width: 628px;
+        font-size: 39px;
+    }
+
+    .about-list {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+
+    .about-items {
+        width: 295px;
+    }
+
+    .about-btn {
+        padding: 23px 0;
+        font-size: 15px;
+        background-color: rgb(237, 237, 237);
+        color: black;
+    }
+
+    .about-btn img {
+        top: 27px;
+        filter: brightness(0) saturate(100%);
+    }
+
+    .about-btn:hover {
+        background-color: #2a514c;
+        color: white;
+    }
+
+    .about-btn:hover img {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(11deg) brightness(115%) contrast(95%);
+    }
+
+    .template-titel2 {
+        font-size: 38px;
+    }
+
+    .template-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 108px;
+    }
+
+    .template-items {
+        width: 40%;
+        transition: .5s;
+    }
+
+    .template-items:hover {
+        transform: scale(1.3);
+        cursor: pointer;
+    }
+
+    .company-titel2 {
+        margin-bottom: 50px;
+        font-size: 38px;
+    }
+
+    .company-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 108px;
+    }
+
+    .company-items {
+        width: 40%;
+        transition: .5s;
+    }
+
+    .company-items:hover {
+        transform: scale(1.3);
+        cursor: pointer;
+    }
+
+    .overview-titel {
+        margin-top: 60px;
+    }
+
+    .overview-titel2 {
+        font-size: 38px;
+        margin-bottom: 50px;
+    }
+
+    .overview-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 108px;
+    }
+
+    .overview-items {
+        width: 40%;
+        transition: .5s;
+    }
+
+    .overview-items:hover {
+        transform: scale(1.3);
+        cursor: pointer;
+    }
+
+    .pricing-titel {
+        margin-top: 50px;
+    }
+
+    .pricing-titel2 {
+        font-size: 38px;
+        margin-bottom: 80px;
+    }
+
+    .pricing-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 108px;
+    }
+
+    .pricing-items {
+        width: 40%;
+        transition: .5s;
+    }
+
+    .pricing-items:hover {
+        transform: scale(1.3);
+        cursor: pointer;
+    }
+
+    .contact-titel2 {
+        font-size: 38px;
+        margin-bottom: 80px;
+    }
+
+    .contact-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 108px;
+    }
+
+    .contact-items {
+        width: 40%;
+        transition: .5s;
+    }
+
+    .contact-items:hover {
+        transform: scale(1.3);
+        cursor: pointer;
+    }
+
+    .blog-titel2 {
+        font-size: 38px;
+        margin-bottom: 80px;
+    }
+
+    .blog-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 108px;
+    }
+
+    .blog-items {
+        width: 40%;
+        transition: .5s;
+    }
+
+    .blog-items:hover {
+        transform: scale(1.3);
+        cursor: pointer;
+    }
+
+    .account-titel2 {
+        font-size: 38px;
+        margin-bottom: 80px;
+    }
+
+    .account-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 108px;
+    }
+
+    .account-items {
+        width: 40%;
+        transition: .5s;
+    }
+
+    .account-items:hover {
+        transform: scale(1.3);
+        cursor: pointer;
+    }
+
+    .bottom-top {
+        align-items: center;
+        gap: 277px;
+        display: flex;
+        padding: 0 35px;
+        justify-content: space-between;
+    }
+
+    .social-media {
+        gap: 15px;
+    }
+
+    .bottom-list {
+        gap: 120px;
+        padding: 0 10px;
+    }
+
+    .bottom-end {
+        justify-content: flex-start;
+        padding-bottom: 0;
+    }
+
+    .bottom-end-list {
+        margin-left: 35px;
+    }
+}
